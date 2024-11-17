@@ -1,9 +1,8 @@
+import ListadoEmpleados from "./components/ListadoEmpleados";
 
 function App() {
   return (
-    <div>
-      <h1>Sistema de Recursos Humanos</h1>
-    </div>
+    <ListadoEmpleados />
   );
 }
 
