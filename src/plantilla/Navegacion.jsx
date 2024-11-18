@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from "react-router-dom";
 
 export default function Navegacion() {
     return (
@@ -14,7 +15,7 @@ export default function Navegacion() {
                     <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
                         <div className="navbar-nav">
                             <a className="nav-link" aria-current="page" href="/">Inicio</a>
-                            <a className="nav-link" href="/agregar">Agregar Empleado</a>
+                            <Link className="nav-link" to="/agregar">Agregar Empleado</Link>
 
                         </div>
                     </div>
