@@ -35,18 +35,17 @@ export default function ListadoEmpleados() {
                 </tr>
                 </thead>
                 <tbody>
-                <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                </tr>
-                <tr>
-                    <th scope="row">2</th>
-                    <td>Jacob</td>
-                    <td>Thornton</td>
-                    <td>@fat</td>
-                </tr>
+                {
+                    //Iteramos el arreglo de empleados
+                    empleados.map((empleado, indice) => (
+                        <tr key={indice}>
+                            <th scope="row">{empleado.idEmpleado}</th>
+                            <td>{empleado.nombre}</td>
+                            <td>{empleado.departamento}</td>
+                            <td>{empleado.sueldo}</td>
+                        </tr>
+                    ))
+                }
                 </tbody>
             </table>
         </div>
