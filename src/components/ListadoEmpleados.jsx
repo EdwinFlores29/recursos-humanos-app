@@ -26,7 +26,7 @@ export default function ListadoEmpleados() {
                     Sistema de Recursos Humanos
                 </h3>
             </div>
-            <table className="table table-striped table-hover align-middle">
+            <table className="table table-hover align-middle">
                 <thead className="table-dark">
                 <tr>
                     <th scope="col">Id</th>
